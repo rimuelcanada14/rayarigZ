@@ -1,0 +1,30 @@
+.title-container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.title-type {
+    margin-left: 5px;
+}
+.title-text {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-bottom: 0;
+}
+.title-btn {
+    color: white;
+    margin-top: 1em;
+    border-radius: 25px;
+    width: 8em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.title-btn:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: #3d3d3d;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
