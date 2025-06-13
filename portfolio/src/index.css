@@ -7,7 +7,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #3d3d3d;
+  background-color: #f7fcfe;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -29,10 +29,10 @@ body {
   place-items: center;
   min-width: 100%;
   min-height: 100vh;
-  background-color: #3d3d3d;
+  background-color: #f7fcfe;
   align-items: center;
   font-family: 'Poppins';
-  color: white;
+  color: black;
   overflow-x: hidden;
 }
 

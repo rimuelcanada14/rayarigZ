@@ -4,7 +4,7 @@
     height: 100vh;
     display: flex;
     width: 100vw;
-    background-color: #3d3d3d;
+    background-color: #f7fcfe;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -25,12 +25,14 @@
     margin-top: 1em;
     margin-bottom: -4em;
 }
+.table-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .flip-card, .flip-card-s {
-    background-color: white;
-    color: #3d3d3d;
-    border: 1px solid white;
-    padding: 1em;
-    border-radius: 25px;
+    color: black;
     height: 30vw; /* Adjust height based on viewport width */
     max-height: 400px; /* Set a maximum height for larger screens */
     width: 22vw; /* Adjust width based on viewport width */
@@ -38,19 +40,42 @@
     display: flex;
     flex-direction: column-reverse;
     transition: all 0.3s ease;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transform-style: preserve-3d;
     font-size: 20px;
 }
-.flip-card:hover, .flip-card-s:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transition: 0.5s;
+.table-img {
+    width: auto;
+    height: 19em;
+    transition: 0.3s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+.table-btn {
+    color: black;
+    margin-top: 1em;
+    border-radius: 25px;
+    padding: 0.4em 2em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.table-btn:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: #3d3d3d;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.flip-front, .flip-front-s {
+    display: flex;
+    justify-content: center;
+}
+.table-img:hover {
+    border: 2px solid black;
+    padding: .6em;
+}
+
 .flip-card.flipped, .flip-card-s.flipped{
     transform: rotateY(180deg);
 }
 .flip-back, .flip-back-lang {
-    background-color: #3d3d3d;
+    background-color: #f7fcfe;
     color: white;
     backface-visibility: hidden;
     transform: rotateY(180deg);
@@ -106,6 +131,7 @@
         gap: 2.5em;
         padding-right: 2em;
         padding-bottom: 2em;
+        padding-left: 2em;
     }
     .skills-titles {
         font-size: 27px;
@@ -115,10 +141,6 @@
         min-width: 15em;
         min-height: 20em;
     }
-    .flip-card:hover, .flip-card-s:hover {
-        transition: 0.5s;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
     .flip-card-s {
         margin-left: clamp(10px, 10%, 50px); /* Increased the preferred value */
     }
@@ -127,7 +149,7 @@
         height: 5px;
       }
       .skills-card::-webkit-scrollbar-track {
-        background: #3d3d3d;
+        background: #f7fcfe;
         border-radius: 5px;
       }
       .skills-card::-webkit-scrollbar-thumb {

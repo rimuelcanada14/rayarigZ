@@ -6,17 +6,17 @@ const TitlePage = () => {
   return (
     <div className="container-fluid title-container">
       <div className="text-center">
-        <p className="text-white">
+        <p className="text">
           I am
-          <ReactTyped strings={["a web developer", "leading front-end developments", "a 3D modeler", "still learning", ""]} typeSpeed={40} backSpeed={30} loop className='title-type'/>
+          <ReactTyped strings={["an event manager", "a videographer", "a photographer", "a producer", "a director", ""]} typeSpeed={40} backSpeed={30} loop className='title-type'/>
         </p>
-        <div className="border-top border-bottom py-3">
-          <h1 className="text-white fw-bold fs-1 title-text">
-            RIMUEL CAÑADA
+        <div>
+          <h1 className="text fw-bold fs-1 title-text">
+            RAYA RIEGO DE DIOS
           </h1>
         </div>
         <a className="btn border-white title-btn" href="#about">
-          Know me!
+          Click!
         </a>
       </div>
     </div>

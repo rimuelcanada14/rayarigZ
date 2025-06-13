@@ -3,7 +3,7 @@
     position: fixed;
     width: 100vw;
     height: 5em;
-    background-color: #3D3D3D;
+    background-color: #F7FCFE;
     z-index: 10;
 }
 
@@ -14,17 +14,17 @@
 .navbar-brand {
     position: absolute;
     left: 5%;
-    color: white;
+    color: black;
 }
 
 .navbar-brand:hover {
-    color: white;
+    color: black;
 }
 
 .navbar-header, .navbar-brand, .navbar-nav {
     display: flex;
     flex-direction: row;
-    color: white;
+    color: black;
 }
 
 .navbar-nav {
@@ -35,10 +35,10 @@
 }
 .navbar-nav a {
     margin-top: .5em;
-    color: white;
+    color: black;
 }
 .navbar-nav a:hover {
-    border-bottom: 1px dashed white;
+    border-bottom: 1px dashed black;
 }
 .navbar-toggle {
     display: none;
@@ -64,7 +64,7 @@
         margin-top: -.8em;
         width: 100vw;
         z-index: 1; 
-        background-color: #3D3D3D;
+        background-color: #F7FCFE;
         overflow: hidden;
         height: 0; 
         margin-left: -1em;
@@ -98,7 +98,7 @@
         position: absolute;
         right: 5%;
         margin-top: -.45em;
-        color: white;
+        color: black;
         font-size: 24px;
     }
 
@@ -107,6 +107,6 @@
         width: 22px;
         height: 3px;
         margin: 4px auto;
-        background-color: white;
+        background-color: black;
     }
 }

@@ -4,11 +4,11 @@
     height: 100vh;
     display: flex;
     width: 100vw;
-    background-color: #3d3d3d;
+    background-color: #f7fcfe;
     flex-direction: row; /* Default: side-by-side layout */
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 0em;
 }
 
 .about-content {
@@ -19,7 +19,7 @@
 .about-title {
     font-size: 27px;
     font-weight: 600;
-    margin-top: 4em;
+    margin-top: 3em;
 }
 
 .about-img {
@@ -28,6 +28,8 @@
     position: relative;
     margin-top: -2em;
     z-index: 0;
+    border: 2px solid black;
+    padding: 1em;
 }
 
 .about-me {
@@ -36,7 +38,7 @@
 }
 
 .resume-btn {
-    color: white;
+    color: black;
     margin-top: 1em;
     border-radius: 25px;
     background-color: transparent;
@@ -47,9 +49,10 @@
 .resume-btn:hover {
     transition: 0.5s;
     background-color: white;
-    color: #3d3d3d;
+    color: black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 
 @media (max-width: 821px) {
     .about-container {
@@ -60,7 +63,6 @@
 
     .about-img {
         order: -1;
-        width: 100vw;
         display: flex;
         justify-content: center;
     }
@@ -70,7 +72,7 @@
         max-width: 20em; 
     }
     .about-content {
-        margin-top: -6.5em;
+        margin-top: -3.5em;
         margin-bottom: -6em
     }
     .resume-btn {

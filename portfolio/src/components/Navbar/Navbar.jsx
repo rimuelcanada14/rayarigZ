@@ -14,8 +14,8 @@ const Navbar = () => {
       <div className="container-fluid">
         <div className="navbar-header">
           <a className="navbar-brand" href="#title">
-            <p>RIMUEL</p>
-            <p className="fw-bold">CANADA</p>
+            <p>RAYA</p>
+            <p className="fw-bold">RDD</p>
           </a>
 
           {/* Hamburger button for small screens */}
@@ -27,8 +27,8 @@ const Navbar = () => {
           <ul className={`nav navbar-nav ${isMenuOpen ? 'show' : ''}`}>
             <li className="active"><a href="#title">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Projects</a></li> 
+            {/* dropdown */}
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
