@@ -30,7 +30,7 @@ const ProjectsPage = () => {
 
   return (
     <div className='container projects-container'>
-      <p className="fw-bold projects-title">I have developed...</p>
+      <p className="fw-bold projects-title">UP Broadcasting Association</p>
       <div className="project-card">
         {loading ? (
           <p>Loading...</p>
@@ -42,12 +42,12 @@ const ProjectsPage = () => {
               </div>
               <div className="projects-des">
                 <p className='projects-name'>{item.name}</p>
-                <p className="projects-tech">Executive Producer - Director - Videographer</p>
+                <p className="projects-tech">{item.role}</p>
                 <p className='projects-desc'>{item.description}</p>
               </div>
               <div className="project-btn">
                 <a className="btn border-white table-btn" href={item.link} target="_blank">
-                  Watch Now!
+                  View Now!
                 </a>
               </div>
             </div>

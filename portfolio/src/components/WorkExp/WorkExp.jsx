@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import './SkillsPage.css';
-import { RxQuestionMarkCircled } from "react-icons/rx";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebaseConfig";
+import './WorkExp.css';
+
 import oneImage from './1.jpg';
 import twoImage from './2.jpg';
 import threeImage from './3.jpg';
 import fourImage from './4.jpg';
 
-const SkillsPage = () => {
+const WorkExp = () => {
 
   return (
-    <div className='container skills-container'>
-      <p className="fw-bold skills-titles">TABLE OF PROJECTS</p>
-      <div className="skills-card">
+    <div className='container work-container'>
+      <p className="fw-bold work-titles">I worked at...</p>
+      <div className="work-card">
 
         <div className="table-card">
           <div className="flip-card">
@@ -21,8 +19,8 @@ const SkillsPage = () => {
               <img src={oneImage} alt="About Image" className='table-img'></img>
             </div>
           </div>
-          <a className="btn border-white table-btn" href="#up">
-            UP Fair 2025
+          <a className="btn border-white table-btn" href="https://www.facebook.com/ladoucegrazeph" target="_blank" rel="noopener noreferrer">
+            La Douce Graze
           </a>
         </div>
 
@@ -33,8 +31,8 @@ const SkillsPage = () => {
               <img src={twoImage} alt="About Image" className='table-img'></img>
             </div>
           </div>
-          <a className="btn border-white table-btn" href="#projects">
-            UP BroadAss
+          <a className="btn border-white table-btn" href="https://www.facebook.com/profile.php?id=61564613235053" target="_blank" rel="noopener noreferrer">
+            Memory Lane
           </a>
         </div>
 
@@ -44,8 +42,8 @@ const SkillsPage = () => {
               <img src={threeImage} alt="About Image" className='table-img'></img>
             </div>
           </div>
-          <a className="btn border-white table-btn" href="#wrok">
-            Work Experience
+          <a className="btn border-white table-btn" href="https://www.facebook.com/profile.php?id=61570839572226" target="_blank" rel="noopener noreferrer">
+            R Drinks
           </a>
         </div>
 
@@ -55,8 +53,8 @@ const SkillsPage = () => {
               <img src={fourImage} alt="About Image" className='table-img'></img>
             </div>
           </div>
-          <a className="btn border-white table-btn" href="#photo">
-            Freelance Works
+          <a className="btn border-white table-btn" href="https://www.facebook.com/profile.php?id=61570839572226" target="_blank" rel="noopener noreferrer">
+            Print-A-Pic
           </a>
         </div>
 
@@ -65,4 +63,4 @@ const SkillsPage = () => {
   );
 };
 
-export default SkillsPage;
+export default WorkExp;

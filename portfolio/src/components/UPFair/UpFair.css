@@ -1,0 +1,144 @@
+.up-container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    background-color: #f7fcfe;
+    flex-direction: row;
+    margin-top: 12em;
+}
+
+.up-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10em;
+}
+
+.up-title {
+    font-size: 40px;
+    font-weight: 600;
+}
+.up-role {
+    margin-top: -1.2em;
+    font-size: 20px;
+}
+
+.up-img {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-top: -2em;
+    z-index: 0;
+}
+
+
+.resume-btn {
+    color: black;
+    margin-top: 1em;
+    border-radius: 25px;
+    background-color: transparent;
+    width: 10em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.resume-btn:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Ensure Swiper image fills container */
+.up-img {
+    max-width: 30em;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Image inside the swiper */
+.up-me {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Move pagination bullets below the image */
+.mySwiper .swiper-pagination {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Optional: style pagination dots */
+.swiper-pagination-bullet {
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+    opacity: 1;
+}
+
+/* Style navigation arrows */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+    top: 40%;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+
+
+
+@media (max-width: 821px) {
+    .up-container {
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin-top: 10em;
+        margin-bottom: 16em;
+    }
+
+    .up-img {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .up-title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-top: 1em;
+    }
+
+    .up-role {
+        font-size: 18px;
+    }
+
+    .up-me {
+        width: 100%;
+        max-width: 20em;
+    }
+
+    .up-content {
+        margin-top: -3.5em;
+        margin-left: 0;
+    }
+
+    .resume-btn {
+        margin-top: .3em;
+    }
+
+
+}

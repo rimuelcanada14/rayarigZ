@@ -2,8 +2,11 @@ import React from 'react';
 
 import TitlePage from '../TitlePage/TitlePage'
 import AboutPage from '../AboutPage/AboutPage'
+import UpPage from '../UPFair/UpFair'
 import SkillsPage from '../SkillsPage/SkillsPage'
 import ProjectsPage from '../ProjectsPage/ProjectsPage'
+import WorkPage from '../WorkExp/WorkExp'
+import PhotoPage from '../PhotoPage/PhotoPage';
 import ContactPage from '../ContactPage/ContactPage'
 import Navbar from '../Navbar/Navbar'
 
@@ -26,8 +29,20 @@ const MainPage = () => {
       <SkillsPage />
     </div>
 
+    <div id="up">
+      <UpPage />
+    </div>
+
     <div id="projects">
       <ProjectsPage />
+    </div>
+
+    <div id="wrok">
+      <WorkPage />
+    </div>
+
+    <div id="photo">
+      <PhotoPage />
     </div>
 
     <div id="contact">
