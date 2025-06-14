@@ -28,6 +28,9 @@ import melImage18 from './18.jpg';
 import melImage19 from './19.jpg';
 import melImage20 from './20.jpg';
 
+import melVideo1 from './1.mp4';
+import melVideo2 from './2.mp4';
+
 // Put all images into an array
 const images = [
   melImage1,
@@ -57,108 +60,148 @@ const images2 = [
 const PhotoPage = () => {
   return (
     <>
-    
-    <div className="photo-container">
-      <div className="photo-content">
-        <div className="photo-title">
-          <p className="photo-text">Check out some of my photos!</p>
+  <p className="fw-bold photos-title">Freelance and Academic Works</p>
+      <div className="photo-container">
+        
+        <div className="photo-content">
+          <div className="photo-title">
+            
+            <p className="photo-text">Check out some of my photos!</p>
+          </div>
+          <div className="photo-role">
+            <p>I don’t just capture your brand,<br /> I put your vision of success into frames.</p>
+          </div>
         </div>
-        <div className="photo-role">
-          <p>I don’t just capture your brand,<br /> I put your vision of success into frames.</p>
+
+        <div className="photo-img">
+          <Swiper
+            loop={true}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper"
+            spaceBetween={10}
+            slidesPerView={3}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+          >
+            {images.map((img, idx) => (
+              <SwiperSlide key={idx}>
+                <img src={img} alt={`mel-${idx}`} className="photo-me" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
 
-      <div className="photo-img">
-        <Swiper
-          loop={true}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
-          modules={[Pagination, Autoplay]}
-          className="mySwiper"
-          spaceBetween={10}
-          slidesPerView={3}
-          breakpoints={{
-            0: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-        >
-          {images.map((img, idx) => (
-            <SwiperSlide key={idx}>
-              <img src={img} alt={`mel-${idx}`} className="photo-me" />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </div>
-
-    <div className="photo2-container">
-      <div className="photo-content">
-        {/* <div className="photo-title">
+      <div className="photo2-container">
+        <div className="photo-content">
+          {/* <div className="photo-title">
           <p className="photo-text">Check out some of my photos!</p>
         </div> */}
-        <div className="photo2-role">
-          <p>The shots I take are not bits of memories, rather emotions that you can reflect on.</p>
+          <div className="photo2-role">
+            <p>The shots I take are not bits of memories, rather emotions that you can reflect on.</p>
+          </div>
+        </div>
+
+        <div className="photo-img">
+          <Swiper
+            loop={true}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper"
+            spaceBetween={10}
+            slidesPerView={3}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+          >
+            {images2.map((img, idx) => (
+              <SwiperSlide key={idx}>
+                <img src={img} alt={`mel-${idx}`} className="photo-me" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
 
-      <div className="photo-img">
-        <Swiper
-          loop={true}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
-          modules={[Pagination, Autoplay]}
-          className="mySwiper"
-          spaceBetween={10}
-          slidesPerView={3}
-          breakpoints={{
-            0: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-        >
-          {images2.map((img, idx) => (
-            <SwiperSlide key={idx}>
-              <img src={img} alt={`mel-${idx}`} className="photo-me" />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </div>
-
-    <div className="photo2-container">
-      <div className="photo-content">
-        <div className="photo-title">
-          <p className="photo-text"></p>
+      <div className="photo3-container">
+        <div className="photo-content">
+          <div className="photo-title">
+            <p className="photo-text"></p>
+          </div>
+          <div className="photo-role">
+            <p>I don’t just hold the camera, <br /> I shape the scene</p>
+          </div>
         </div>
-        <div className="photo-role">
-          <p>The shots I take are not bits of memories, rather emotions that you can reflect on.</p>
+
+        <div className="photo-img">
+          <Swiper
+            loop={true}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper"
+            spaceBetween={10}
+            slidesPerView={3}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+          >
+            {images2.map((img, idx) => (
+              <SwiperSlide key={idx}>
+                <img src={img} alt={`mel-${idx}`} className="photo-me" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        <div className="container abouts-container">
+          <div className="abouts-img">
+            <video className="abouts-me" controls loop playsInline>
+              <source src={melVideo1} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+
+          <div className="abouts-content">
+            <div className="about-title">
+              <p>Dedmatology</p>
+              <p className='text fw-normal abouts-role'> Director </p>
+              <p className="abouts-text">After receiving the corpse of the town mayor in the dead of night, three embalmers conspired how he died–only to realize that the spirit of the mayor still remains.<br />
+                <br /><p className='text fw-bold'> Awards: </p>
+                - Best Production
+                <br />- People's Choice Award</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="container abouts2-container">
+          <div className="abouts2-content">
+            <div className="about-title">
+              <p>sandali.</p>
+              <p className='text fw-normal abouts-role'> Director - Videographer </p>
+              <p className="abouts-text">sandali. is a short film that follows a young man grappling with the weight of grief and isolation as he struggles to move on, haunted by drunken hallucinations of a lost lover</p>
+            </div>
+          </div>
+
+          <div className="abouts2-img">
+            <video className="abouts2-me" controls loop playsInline>
+              <source src={melVideo2} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </div>
-
-      <div className="photo-img">
-        <Swiper
-          loop={true}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
-          modules={[Pagination, Autoplay]}
-          className="mySwiper"
-          spaceBetween={10}
-          slidesPerView={3}
-          breakpoints={{
-            0: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-        >
-          {images2.map((img, idx) => (
-            <SwiperSlide key={idx}>
-              <img src={img} alt={`mel-${idx}`} className="photo-me" />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </div>
     </>
   );
 };

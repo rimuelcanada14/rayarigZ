@@ -9,6 +9,99 @@
     margin-top: 12em;
 }
 
+.abouts-container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: flex;
+    width: 100vw;
+    background-color: #f7fcfe;
+    flex-direction: row;
+    /* Default: side-by-side layout */
+    justify-content: center;
+    align-items: center;
+    margin-top: 7em;
+    gap: 2em;
+}
+
+.abouts2-container {
+    display: flex;
+    width: 100vw;
+    background-color: #f7fcfe;
+    flex-direction: row;
+    /* Default: side-by-side layout */
+    justify-content: center;
+    align-items: center;
+    margin-top: 7em;
+    gap: 8em;
+}
+
+
+
+.abouts-content {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    margin-top: -6em;
+}
+
+.abouts2-content {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-top: -6em;
+    margin-left: -4em;
+}
+.abouts-role {
+    margin-top: -1em;
+    font-size: 20px;
+}
+.abouts-text {
+    font-size: 22px;
+    font-weight: 500;
+    
+}
+
+.abouts-img {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-top: -2em;
+    z-index: 0;
+    border: 2px solid black;
+    padding: 1em; 
+    margin-left: -5em;  
+}
+
+.abouts-img {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-top: -2em;
+    z-index: 0;
+    border: 2px solid black;
+    padding: 1em;  
+}
+
+.abouts2-img {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-top: -2em;
+    z-index: 0;
+    border: 2px solid black;
+    padding: 1em;  
+}
+
+.abouts-me {
+    width: 38em;
+    height: auto;
+}
+
+.abouts2-me {
+    width: 38em;
+    height: auto;
+}
+
 .photo2-container {
     padding-left: 1.5em;
     padding-right: 1.5em;
@@ -19,6 +112,18 @@
     flex-direction: column;
     margin-top: -22em;
 }
+
+.photo3-container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    height: 200vh;
+    display: flex;
+    width: 100vw;
+    background-color: #f7fcfe;
+    flex-direction: column;
+    margin-top: -22em;
+}
+
 
 .photo-content {
     display: flex;
@@ -147,6 +252,16 @@
         padding-right: 0em;
     }
 
+    .photo3-container {
+        flex-direction: column;
+        align-items: center;
+        height: 250vh;
+        margin-top: -46em;
+        margin-bottom: 16em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
     .photo-img {
         order: 0;
     }
@@ -158,11 +273,12 @@
         order: 0;
     }
 
-    .photo-role, .photo2-role {
+    .photo-role,
+    .photo2-role {
         font-size: 18px;
         order: 2;
         width: auto;
-    } 
+    }
 
     .photo-me {
         width: 100%;
@@ -178,5 +294,81 @@
         margin-top: .3em;
     }
 
+}
 
+@media (max-width: 821px) {
+    .abouts-container {
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .abouts-img {
+        order: -1;
+        display: flex;
+        justify-content: center;
+        width: 200%;
+        margin-left: 0em;
+    }
+
+    .abouts-me {
+        width: 60%;
+        max-width: 20em;
+       
+    }
+
+    .abouts-content {
+        margin-top: -4.5em;
+    }
+
+    .abouts-content {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        font-size: 21px;
+    }
+
+    .resume-btn {
+        margin-top: .3em;
+    }
+}
+
+@media (max-width: 821px) {
+    .abouts2-container {
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        gap: 2em;
+    }
+
+    .abouts2-img {
+        order: -1;
+        display: flex;
+        justify-content: center;
+        width: 200%;
+        margin-left: 0em;
+        margin-top: -20em;
+    }
+
+    .abouts2-me {
+        width: 60%;
+        max-width: 20em;
+    }
+
+    .abouts2-content {
+        margin-top: -4.5em;
+        margin-bottom: -6em;
+        margin-left: 0em;
+    }
+
+    .abouts2-content {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        font-size: 21px;
+    }
+
+    .resume-btn {
+        margin-top: .3em;
+    }
 }

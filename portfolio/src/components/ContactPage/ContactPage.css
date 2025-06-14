@@ -18,11 +18,11 @@
     flex-direction: row;
     gap: .4em;
     text-decoration: none;
-    color: white;
+    color: black;
     
 }
 .icons a{
-    color: white;
+    color: black;
 }
 .github:hover {
     color: #c29aff;
@@ -33,7 +33,7 @@
     transition: 0.3s;
 }
 .facebook:hover {
-    color: #1877f2;
+    color: #ea4335;
     transition: 0.3s;
 }
 .ig:hover {

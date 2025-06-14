@@ -7,6 +7,7 @@ import SkillsPage from '../SkillsPage/SkillsPage'
 import ProjectsPage from '../ProjectsPage/ProjectsPage'
 import WorkPage from '../WorkExp/WorkExp'
 import PhotoPage from '../PhotoPage/PhotoPage';
+import FreePage from '../FreePage/FreePage'
 import ContactPage from '../ContactPage/ContactPage'
 import Navbar from '../Navbar/Navbar'
 
@@ -43,6 +44,10 @@ const MainPage = () => {
 
     <div id="photo">
       <PhotoPage />
+    </div>
+
+    <div id="free">
+      <FreePage />
     </div>
 
     <div id="contact">
