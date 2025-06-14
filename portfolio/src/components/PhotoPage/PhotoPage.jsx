@@ -28,8 +28,8 @@ import melImage18 from './18.jpg';
 import melImage19 from './19.jpg';
 import melImage20 from './20.jpg';
 
-import melVideo1 from './1.mp4';
-import melVideo2 from './2.mp4';
+// import melVideo1 from './1.mp4';
+// import melVideo2 from './2.mp4';
 
 // Put all images into an array
 const images = [
@@ -164,7 +164,7 @@ const PhotoPage = () => {
           </Swiper>
         </div>
 
-        <div className="container abouts-container">
+        {/* <div className="container abouts-container">
           <div className="abouts-img">
             <video className="abouts-me" controls loop playsInline>
               <source src={melVideo1} type="video/mp4" />
@@ -200,7 +200,7 @@ const PhotoPage = () => {
               Your browser does not support the video tag.
             </video>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
