@@ -14,7 +14,7 @@ const ContactPage = () => {
     <>
     <div className='container-fluid contact-container'>
         <h2 className="contact-nice fw-bold">
-            Nice meeting you!
+            Let's capture memories together!
         </h2>
         <h4 className='fs-5 fs-sm-9 fs-md-9'>Get on my socials...</h4>
         <div className="icons">

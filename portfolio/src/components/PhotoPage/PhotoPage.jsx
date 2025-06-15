@@ -27,9 +27,16 @@ import melImage17 from './17.jpg';
 import melImage18 from './18.jpg';
 import melImage19 from './19.jpg';
 import melImage20 from './20.jpg';
+import melImage21 from './21.jpg';
+import melImage22 from './22.jpg';
+import melImage23 from './23.jpg';
+import melImage24 from './24.jpg';
+import melImage25 from './25.jpg';
+import melImage26 from './26.jpg';
+import melImage27 from './27.jpg';
 
-// import melVideo1 from './1.mp4';
-// import melVideo2 from './2.mp4';
+import melVideo1 from './1.mp4';
+import melVideo2 from './2.mp4';
 
 // Put all images into an array
 const images = [
@@ -55,6 +62,16 @@ const images2 = [
   melImage18,
   melImage19,
   melImage20,
+];
+
+const images3 = [
+  melImage21,
+  melImage22,
+  melImage23,
+  melImage24,
+  melImage25,
+  melImage26,
+  melImage27,
 ];
 
 const PhotoPage = () => {
@@ -156,7 +173,7 @@ const PhotoPage = () => {
               1024: { slidesPerView: 3 },
             }}
           >
-            {images2.map((img, idx) => (
+            {images3.map((img, idx) => (
               <SwiperSlide key={idx}>
                 <img src={img} alt={`mel-${idx}`} className="photo-me" />
               </SwiperSlide>
@@ -164,7 +181,7 @@ const PhotoPage = () => {
           </Swiper>
         </div>
 
-        {/* <div className="container abouts-container">
+        <div className="container abouts-container">
           <div className="abouts-img">
             <video className="abouts-me" controls loop playsInline>
               <source src={melVideo1} type="video/mp4" />
@@ -200,7 +217,7 @@ const PhotoPage = () => {
               Your browser does not support the video tag.
             </video>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
